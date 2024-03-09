@@ -75,10 +75,26 @@ justify-content: center;
     transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
-  .love{
+  .love-product{
     position: absolute;
     margin: 6px;
     top: 5px;
     right: 5px;
+    padding: 5px 15px;
+  }
+
+  .arrow-product-r{
+    position: absolute;
+    margin: 6px;
+    top: 100px;
+    right: 5px;
+    padding: 5px 15px;
+  }
+
+  .arrow-product-l{
+    position: absolute;
+    margin: 6px;
+    top: 100px;
+    left: 5px;
     padding: 5px 15px;
   }
