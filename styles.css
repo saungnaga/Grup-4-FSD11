@@ -1,5 +1,5 @@
 .page {
-    padding: 5%;
+    padding: 7%;
     gap: 20px;
     font-family: sans-serif;
 }
@@ -33,11 +33,21 @@ a {color: black;}
 }
 .hostbox {display: flex; padding: 10px; justify-content: space-between; background-color: beige; border-radius: 20px;}
 .profile {margin: 30px; line-height: 30px;}
-.profilebox {border-style: solid; border-radius: 15px; border-color: beige; background-color: white; display: flex; justify-content: space-between; padding: 10%; margin: 5%; height: 35%;}
+.profilebox {border-style: solid; border-radius: 15px; border-color: beige; border-style: outset; background-color: white; display: flex; justify-content: space-between; padding: 10%; margin: 5%; height: 35%;}
 .detail {line-height: 30px;}
 .message {background-color: black; color: white; border-radius: 10px; border: black; padding: 6px;margin-top: 20px; padding: 20px; margin-bottom: 30px; font-weight:900;}
 
-@media screen and (max-width: 800px) {
+.rules {
+    display: flex;
+    justify-content: space-between;
+    line-height: 30px;
+}
+
+.rules a {
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 810px) {
     .hostbox {
         flex-direction: column;
     }
