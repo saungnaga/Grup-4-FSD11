@@ -11,7 +11,7 @@
         <div class="calendar">
             <h3>Select check-in date</h3>
             <div>Add your travel dates for exact pricing</div>
-            <img src="./source/Screenshot 2024-03-18 211127.png" width="60%">
+            <img src="./source/Screenshot 2024-03-18 211127.png" width="60%" id="hov">
             <div style="display: flex; justify-content: space-between; width: 58%; margin-bottom: 2rem;">
                 <div>⌨️</div>
                 <a href="">Clear dates</a>
@@ -30,33 +30,45 @@
         <div class="rating">
             <div class="ratebox">
                 <div>Overal rating</div>
-                <div style="display: flex; margin-bottom: -15px;" class="ratenumb">
-                    5 &nbsp;<hr width="90%" size="5" color="black" align="left" style="margin-left: 5%;"><hr width="10%" size="5" color="grey">
+                <div class="ratenumb">
+                    5<hr width="90%" size="5" color="black" class="ratebar"><hr width="10%" size="5" color="grey">
                 </div>
-                <div style="display: flex;">
-                    4<hr width="10%" size="5" color="black" align="left" style="margin-left: 10%;"><hr width="90%" size="5" color="grey">
+                <div class="ratenumb">
+                    4<hr width="10%" color="black" class="ratebar"><hr width="90%" size="5" color="grey">
                 </div>
-                <div>3</div>
-                <div>2</div>
-                <div>1</div>
+                <div class="ratenumb">
+                    3 <hr width="90%" size="5" color="grey" class="ratebar">
+                </div>
+                <div class="ratenumb">
+                    2 <hr width="90%" size="5" color="grey" class="ratebar">
+                </div>
+                <div class="ratenumb">
+                    1 <hr width="90%" size="5" color="grey" class="ratebar">
+                </div>
             </div>
             <div class="ratebox">
-                Cleanliness<br/>4.9
+                Cleanliness<br/>4.9<br/>
+                <img src="./source/clean.png" alt="">
             </div>
             <div class="ratebox">
-                Accuracy<br/>4.9
+                Accuracy<br/>4.9<br/>
+                <img src="./source/acc.png" alt="">
             </div>
             <div class="ratebox">
-                Check-in<br/>5.0
+                Check-in<br/>5.0<br/>
+                <img src="./source/in.png" alt="">
             </div>
             <div class="ratebox">
-                Communication<br/>5.0
+                Communication<br/>5.0<br/>
+                <img src="./source/com.png" alt="">
             </div>
             <div class="ratebox">
-                Location<br/>4.9
+                Location<br/>4.9<br/>
+                <img src="./source/loc.png" alt="">
             </div>
             <div class="ratebox">
-                Value<br/>4.7
+                Value<br/>4.7<br/>
+                <img src="./source/val.png" alt="">
             </div>
         </div>
         <hr>
@@ -65,25 +77,25 @@
                 <div class="revbox">
                     <div class="name">
                         <div class="photo">
-                            <img src="/source/1291718.jpg" width="100px" height="100px" style="border-radius: 50%;">
+                            <img src="./source/emma.jpg" width="50px" height="50px" style="border-radius: 50%;" id="hov">
                         </div>
-                        <div><b>Marilu</b><br/>Bucharest, Romania</div>
+                        <div><b>Emma</b><br/>Bucharest, Romania</div>
                     </div>
-                    <div class="value">⭐⭐⭐⭐⭐ • January 2024</div>
+                    <div class="value">★★★★★ • January 2024</div>
                     <div>Perfection! The location is straight up from a movie scene and the house is so well designed</div>
                 </div>
                 <div class="revbox">
                     <div class="name">
                         <div class="photo">
-                            <img src="/source/17981499484_89e4d12235_b.jpg" width="100px" height="100px" style="border-radius: 50%;">
+                            <img src="./source/molly.jpg" width="50px" height="50px" style="border-radius: 50%;" id="hov">
                         </div>
                         <div><b>Molly</b><br/>Bremen, Germany</div>
                     </div>
-                    <div class="value">⭐⭐⭐⭐⭐ • January 2024</div>
+                    <div class="value">★★★★★ • January 2024</div>
                     <div>Everything was as described, I had a lovely stay</div>
                 </div>
             </div>
-            <button class="showrev">
+            <button class="showrev" id="hov">
                 Show all 35 reviews
             </button>
         </div>
@@ -92,15 +104,15 @@
             <h3>Where you'll be</h3>
             <div class="loc">Honningsvåg, Finnmark, Norway</div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1546.6415401789604!2d25.78493484887242!3d70.97558295985303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHotel!5e0!3m2!1sid!2sid!4v1710769705603!5m2!1sid!2sid" width="100%" height="450rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div><a href=""><b>Show more ></b></a></div>
+            <div><a href=""><b>Show more</b></a> ></div>
         </div>
         <div class="host">
             <h3>Meet your Host</h3>
             <div class="hostbox">
                 <div class="profile">
-                    <div class="profilebox">
-                        <div style="text-align: center;">
-                            <img src="./source/0032539885_10.jpg" alt="Photo Profile" width="100px" height="100px" style="border-radius: 50%;">
+                    <div class="profilebox" id="hov">
+                        <div class="hostname">
+                            <img src="./source/Ronald.png" alt="Photo Profile" width="100px" height="100px">
                             <div><b>Ronald & <br/>Inese</b></div>
                             <div>Superhost</div>
                         </div>
@@ -110,7 +122,7 @@
                             </div>
                             <hr>
                             <div>
-                                <div><b style="font-size: 20px;">4.89 ⭐</b><br/>Rating</div>
+                                <div><b style="font-size: 20px;">4.89 ★</b><br/>Rating</div>
                             </div>
                             <hr>
                             <div>
@@ -119,10 +131,10 @@
                         </div>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <div>🏢  My work: Arctic Bygg AS</div>
+                        <div>💼  My work: Arctic Bygg AS</div>
                         <div>🌐  Speaks Danish, English, Norwegian, and Swedish</div>
                     </div>
-                    <div>We are couple who loves to travel and idea about Airbnb in our place came from staying in Spain...<br/><a href="">Show more ></a></div>
+                    <div>We are couple who loves to travel and idea about Airbnb in our place came from staying in Spain...<br/><a href="">Show more</a> ></div>
                 </div>
                 <div class="detail">
                     <div>
@@ -144,15 +156,15 @@
             <div class="rules">
                 <div>
                     <h3>House rules</h3>
-                    <div>Check-in after 3:00 PM <br/> Checkout before 11:00 AM <br/> 8 guest maximum <br/><a href="">Show more</a>></div>
+                    <div>Check-in after 3:00 PM <br/> Checkout before 11:00 AM <br/> 8 guest maximum <br/><a href="">Show more</a> ></div>
                 </div>
                 <div>
                     <h3>Safety & property</h3>
-                    <div>Pool/hot tub without a gate or lock <br/> Nearby lake, river, other body of water <br/> Carbon monoxide detector not required <br/><a href="">Show more</a>></div>
+                    <div>Pool/hot tub without a gate or lock <br/> Nearby lake, river, other body of water <br/> Carbon monoxide detector not required <br/><a href="">Show more</a> ></div>
                 </div>
                 <div>
                     <h3>Cancellation policy</h3>
-                    <div>Add your trip dates to get the cancellation details for this stay.<br/><a href="">Add dates</a>></div>
+                    <div>Add your trip dates to get the cancellation details for this stay.<br/><a href="">Add dates</a> ></div>
                 </div>
             </div>
         </div>
