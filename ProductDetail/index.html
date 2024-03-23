@@ -5,12 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="header-container">
+    <header class="w-screen">
+        <div class="h-20 w-screen py-[10px] flex justify-between ps-8 pe-16 border-b-[1px] items-center fixed top-0 bg-white max-sm:pe-2 ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png"
+                class=" object-cover w-28 max-sm:w-16">
+            <div class="pl-[200px] px-8 max-sm:hidden ">
+                <div
+                    class="flex items-center  rounded-full shadow-sm hover:shadow-md h-12 border p-3">
+                    <button class="border-r-2 border-gray-100 px-4 text-sm font-medium">Anywhere</button>
+                    <button class="border-r-2 border-gray-100 px-4 text-sm font-medium">Any week</button>
+                    <button class="border-gray-100 px-4 gray-text text-sm font-medium">Add guests</button>
+                    <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2 hover:bg-red-600"></i>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex items-center gap-1">
+                    <button class="px-4 py-3 text-sm font-medium hover:bg-gray-100 hover:rounded-full max-md:hidden">Airbnb your
+                        home</button>
+                    <button class="p-3 flex items-center text-sm font-medium hover:bg-gray-100 hover:rounded-full max-md:hidden">
+                        <span class="material-symbols-outlined">language</span>
+                    </button>
+                    <a href="../Login/index.html"
+                        class="flex justify-evenly items-center gap-2 rounded-full border shadow-sm h-10 w-20 py-6 pl-3 pr-2 hover:shadow-md hover:cursor-pointer">
+                        <i class="fa-solid fa-bars"></i>
+                        <button class="bg-gray-500 text-white rounded-full text-center w-7 h-7"><i
+                                class="fa-solid fa-user"></i></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="root-container mt-20">
         <div class="title">
-            <h1>SarNest - Designed with Nature</h1>
+            <h1 class="font-bold text-[30px] max-sm:text-[15px]">SarNest - Designed with Nature</h1>
         </div>
         <div class="image">
             <img src="https://a0.muscache.com/im/pictures/miso/Hosting-850769713572940614/original/44d344d3-e0d7-423e-8067-5865ae5e7c6d.png?im_w=960" alt="">
@@ -54,7 +86,7 @@
             <div class="main-container">
                 <section>
                     <div class="homestay">
-                        <h2>Entire home in Honningsvåg, Norway</h2>
+                        <h2 class="font-bold text-[20px]">Entire home in Honningsvåg, Norway</h2>
                         <p>8 guests · 3 bedrooms · 6 beds · 1 bath</p>
                     </div>
                     <div class="card-section">
@@ -108,10 +140,10 @@
                             <a href="#">Riviews</a>
                         </div>
                     </div>
-                    <div class="author">
+                    <div class="author items-center">
                         <img src="https://a0.muscache.com/im/pictures/user/a2dfc749-465e-4863-b103-b4d47c3e50c0.jpg?im_w=240" alt="">
                         <div class="author-desc">
-                            <h4>Hosted by Ronald & Inese</h4>
+                            <h4 class="font-bold">Hosted by Ronald & Inese</h4>
                             <p>Superhost · 7 years hosting
                             </p>
                         </div>
@@ -119,19 +151,19 @@
                     <div class="about-reserv">
                         <div class="aserv1">
                             <i class="fa-regular fa-calendar"></i>
-                            <h4>Free cancellation before March 29</h4>
+                            <h4 class="font-bold">Free cancellation before March 29</h4>
                         </div>
                         <div class="aserv2">
                             <i class="fa-solid fa-door-open"></i>
                             <div>
-                                <h4>Self check-in</h4>
+                                <h4 class="font-bold"> Self check-in</h4>
                                 <p>Check yourself in with the smartlock.</p>
                             </div>
                         </div>
                         <div class="aserv3">
                             <i class="fa-solid fa-paw"></i>
                             <div>
-                                <h4>Furry friends welcome</h4>
+                                <h4 class="font-bold">Furry friends welcome</h4>
                                 <p>Bring your pets along for the stay.</p>
                             </div>
                         </div>
@@ -156,7 +188,7 @@
                     <div class="slider">
                         <div class="slider-head">
                             <div class="shead1">
-                                <h2>Where you'll sleep</h2>
+                                <h2 class="font-bold text-[20px]">Where you'll sleep</h2>
                             </div>
                             <div class="shead2">
                                 <p>1/2</p>
@@ -169,21 +201,21 @@
                             <div class="slide1">
                                 <img src="https://a0.muscache.com/im/pictures/333a37cc-a492-46e2-b3a7-1fd18c126fda.jpg?im_w=320" alt="gambar1">
                                 <div>
-                                    <h3>Bedroom 1</h3>
+                                    <h3 class="font-bold">Bedroom 1</h3>
                                     <p>1 double bed</p>
                                 </div>
                             </div>
                             <div class="slide2">
                                 <img src="https://a0.muscache.com/im/pictures/c05cd091-be65-4ee1-b75d-06e42f63130b.jpg?im_w=320" alt="gambar2">
                                 <div>
-                                    <h3>Bedroom 2</h3>
+                                    <h3 class="font-bold">Bedroom 2</h3>
                                     <p>1 double bed, 1 bunk bed</p>
                                 </div>
                             </div>
                             <div class="slide3">
                                 <img src="https://a0.muscache.com/im/pictures/miso/Hosting-850769713572940614/original/44d344d3-e0d7-423e-8067-5865ae5e7c6d.png?im_w=320" alt="gambar3">
-                                <div>
-                                    <h3>Bedroom 3</h3>
+                                <div class="mt-[15px]">
+                                    <h3 class="font-bold">Bedroom 3</h3>
                                     <p>1 king bed, 1 single bed</p>
                                 </div>
                             </div>
@@ -191,7 +223,7 @@
                         </div>
                     </div>
                     <div class="service-room">
-                        <h2>What this place offers</h2>
+                        <h2 class="font-bold text-[25px]">What this place offers</h2>
                         <div class="servroom">
                             <div class="servroom1">
                                 <div class="layserv1">
@@ -264,12 +296,12 @@
                                 </div>
                             </div>
                             <div class="servroom2">
-                                <button><h4>Show all 55 aminites</h4></button>
+                                <button><h4 class="font-bold">Show all 55 aminites</h4></button>
                             </div>
                         </div>
                     </div>
                     <div class="calendar">
-                        <h3>Select check-in date</h3>
+                        <h3 class="font-bold text-[25px]">Select check-in date</h3>
                         <div>Add your travel dates for exact pricing</div>
                         <img src="../source/Screenshot 2024-03-18 211127.png" width="100%" id="hov">
                         <div style="display: flex; justify-content: space-between; width: 97%; margin-bottom: 2rem;">
@@ -282,7 +314,7 @@
             <aside>
                 <div class="card-reserv">
                     <div class="card-reserv1" style="display: flex;">
-                        <h2>Rp2,591,949</h2>
+                        <h2 class="font-bold text-[20px]">Rp2,591,949</h2>
                         <p>night</p>
                     </div>
                     <div class="card-reserv2">
@@ -298,7 +330,7 @@
                                 </div>
                             </div>
                             <div class="caserv2">
-                                <h5>GUESTS</h5>
+                                <h5 class="font-bold">GUESTS</h5>
                                 <p>1 guests</p>
                             </div>
                         </div>
@@ -486,7 +518,7 @@
                 </button>
             </div>
             <div class="maps">
-                <h2>Where you'll be</h2>
+                <h2 class="font-bold text-[25px]">Where you'll be</h2>
                 <br>
                 <div class="loc">Honningsvåg, Finnmark, Norway</div>
                 <br>
@@ -497,7 +529,7 @@
                 <div class="hostname">
                     <img src="../source/Ronald.png" alt="Photo Profile" width="100px" height="100px">
                     <div>
-                        <h2>Hosted by Ronald & Inese</h2>
+                        <h2 class="font-bold text-[23px]">Hosted by Ronald & Inese</h2>
                         <p style="color: #757272;">Joined in January 2017</p>
                     </div>
                 </div>
@@ -520,7 +552,7 @@
                         <div>We are couple who loves to travel and idea about Airbnb in our place came from staying in Spain in some nice places.
                             Ronald is project manager and carpenter so his skills he…<br/><a href="" style="font-weight: bold;">Show more</a></div>
                         <div>
-                            <h3>Ronald & Inese is a Superhost</h3>
+                            <h3 class="font-bold text-[22px]">Ronald & Inese is a Superhost</h3>
                             <br>
                             <div>Superhosts are experienced, highly rated hosts who are committed to providing great stays for guests.</div>
                         </div>
@@ -540,7 +572,7 @@
                 </div>
             </div>
             <div class="ruless">
-                <h2>Things to know</h2>
+                <h2 class="font-bold text-[24px]">Things to know</h2>
                 <div class="rules">
                     <div class="rulsetting1">
                         <h3>House rules</h3>
@@ -558,10 +590,190 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="px-10 border-t-[1px] w-screen bg-gray-100 py-10 ">
+            <h1 class="text-xl font-bold pb-5">Inspiration for future getaways</h1>
+            <div class="flex-wrap space-x-5 border-b-[1px] pb-8 ">
+                <a href="#" class="text-sm font-bold text-gray-700 pb-3">Popular</a>
+                <a href="#" class="text-sm font-bold text-gray-400">Arts & culture</a>
+                <a href="#" class="text-sm font-bold text-gray-400">Outdoors</a>
+                <a href="#" class="text-sm font-bold text-gray-400">Mountains</a>
+                <a href="#" class="text-sm font-bold text-gray-400">Beach</a>
+                <a href="#" class="text-sm font-bold text-gray-400">Unique stays</a>
+                <a href="#" class="text-sm font-bold text-gray-400">Categories</a>
+                <a href="#" class="text-sm font-bold text-gray-400">Things to do</a>
+                <a href="#" class="text-sm font-bold text-gray-400">Travel tips & inspiration</a>
+                <a href="#" class="text-sm font-bold text-gray-400">Airbnb-friendly apartments</a>
+            </div>
+            <div class="flex gap-12 mt-8 max-md:flex-col">
+                <div class="flex gap-12">
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Canmore</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Tucson</p>
+                            <p class="text-sm text-gray-500">Condo rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Anaheim</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Benalmádena</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Jasper</p>
+                            <p class="text-sm text-gray-500">Cabin rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Monterey</p>
+                            <p class="text-sm text-gray-500">Bungalow rentals</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Marbella</p>
+                            <p class="text-sm text-gray-500">Beachfront rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Mountain View</p>
+                            <p class="text-sm text-gray-500">Vacation rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Paso Robles</p>
+                            <p class="text-sm text-gray-500">Vacation rentals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-12">
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Mijas</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Devonport</p>
+                            <p class="text-sm text-gray-500">Vacation rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Santa Barbara</p>
+                            <p class="text-sm text-gray-500">House rentals</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Prescott</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Mallacoota</p>
+                            <p class="text-sm text-gray-500">Condo rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Sonoma</p>
+                            <p class="text-sm text-gray-500">House rentals</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Scottsdale</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Tucson</p>
+                            <p class="text-sm text-gray-500">Condo rentals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="px-10 grid grid-cols-3 gap-8 border-t-[1px] w-screen bg-gray-100 py-10">
+            <div class="flex flex-col">
+                <p class="text-sm font-bold text-gray-700 pb-1">Support</p>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Help Center</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">AirCover</a>
+                <a href="#"
+                    class="text-sm font-base py-1 hover:underline hover:decoration-solid">Anti-discrimination</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Disability support</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Cancellation
+                    options</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Report neighborhood
+                    concern</a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-sm font-bold text-gray-700 pb-1">Hosting</p>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Airbnb your home</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">AirCover for Hosts</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Hosting resources</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Community forum</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Hosting
+                    responsibly</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Airbnb-friendly
+                    apartments</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Join a free Hosting
+                    class</a>
+            </div>
+            <div class="flex flex-col">
+                <p class="text-sm font-bold text-gray-700 pb-1">Airbnb</p>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Newsroom</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">New features</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Careers</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Investors</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Gift cards</a>
+                <a href="#" class="text-sm font-base py-1 hover:underline hover:decoration-solid">Airbnb.org emergency
+                    stays</a>
+            </div>
+        </div>
+        <div class="h-12 bottom-0 border-t-[1px] w-screen bg-gray-100 flex justify-between items-center px-10">
+            <div class="flex flex-wrap space-x-2 text-sm font-base">
+                <p>© 2023 Airbnb, Inc.</p>
+                <p>·</p>
+                <a href="#" class="hover:underline hover:decoration-solid">Terms</a>
+                <p>·</p>
+                <a href="#" class="hover:underline hover:decoration-solid">Sitemap</a>
+                <p>·</p>
+                <a href="#" class="hover:underline hover:decoration-solid">Privacy</a>
+                <p>·</p>
+                <div class="flex flex-row">
+                    <a href="#" class="hover:underline hover:decoration-solid">Your Privacy Choices</a>
+                    <span class="flex ps-2 items-center"><svg width="26" height="12" fill="none">
+                            <rect x="0.5" y="0.5" width="25" height="11" rx="5.5" fill="#fff"></rect>
+                            <path d="M14 1h7a5 5 0 010 10H11l3-10z" fill="#06F"></path>
+                            <path d="M4.5 6.5l1.774 1.774a.25.25 0 00.39-.049L9.5 3.5" stroke="#06F"
+                                stroke-linecap="round"></path>
+                            <path d="M16.5 3.5L19 6m0 0l2.5 2.5M19 6l2.5-2.5M19 6l-2.5 2.5" stroke="#fff"
+                                stroke-linecap="round"></path>
+                            <rect x="0.5" y="0.5" width="25" height="11" rx="5.5" stroke="#06F"></rect>
+                        </svg></span>
+                </div>
+            </div>
+            <div class="flex space-x-4 text-sm font-medium">
+                <span class="material-symbols-outlined">language</span>
+                <a href="#" class="hover:underline hover:decoration-solid">English (US)</a>
+                <p>Rp <a href="#" class="hover:underline hover:decoration-solid">IDR</a></p>
+                <div class="flex gap-5">
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png" alt="" class="h-5">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" alt="" class="h-5">
+                    </a>
+                    <a href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1400/1400829.png" alt="" class="h-5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <div class="footer-button">
         <h4>Date</h4>
         <button>Changes dates</button>
     </div>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>

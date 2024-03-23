@@ -8,10 +8,10 @@
     font-style: normal
 }
 
-.header-container {
-    width: 1150px;
+.root-container {
+    width: 100vw;
     margin: auto;
-    padding: 20px;
+    padding: 80px;
     gap: 20px;
     flex-direction: column;
     display: flex;
@@ -97,7 +97,7 @@ main {
 }
 
 .main-container {
-    width: 58%;
+   width: calc(100% - 390px - 70px);
     /* background-color: chartreuse; */
 }
 
@@ -359,6 +359,7 @@ section {
 }
 
 .servroom2 > button {
+    border: 1px solid #DDDDDD;
     padding: 15px 40px;
     border-radius: 5px;
     font-size: 16px;
@@ -366,7 +367,7 @@ section {
     background-color: white;
 }
 aside {
-    width: 100%;
+    width: 390px;
     /* padding: 10px 20px; */
 
 }
@@ -380,7 +381,7 @@ aside {
     flex-direction: column;
     gap: 20px;
     position: sticky;
-    top: 20px;
+    top: 100px;
 
 }
 
@@ -591,8 +592,8 @@ a {color: black;}
 
 
 
-@media screen and (max-width: 840px) {
-    .header-container {
+@media screen and (max-width: 768px) {
+    .root-container {
         width: 770px;
         /* padding: 10px; */
     }
@@ -759,6 +760,7 @@ a {color: black;}
         position: fixed;
         bottom: 0;
         align-items: center;
+        z-index: 50
     }
     
     .footer-button > button {
@@ -771,10 +773,11 @@ a {color: black;}
   
 }
 
-@media screen and (max-width: 470px) {
-    .header-container {
-        width: 380px;
-        /* padding: 10px; */
+@media screen and (max-width: 640px) {
+    .root-container {
+        width: 100vw;
+        /* margin: auto; */
+        padding: 25px;
     }
 
     .title {
@@ -937,6 +940,7 @@ a {color: black;}
         position: fixed;
         bottom: 0;
         align-items: center;
+        /* z-index: 50 */
     }
     
     .footer-button > button {
