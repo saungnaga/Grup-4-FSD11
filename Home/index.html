@@ -21,7 +21,7 @@
             class="h-20 w-screen py-[10px] flex justify-between ps-8 pe-16 w-screen border-b-[1px] items-center fixed top-0 bg-white z-50">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/1200px-Airbnb_Logo_B%C3%A9lo.svg.png"
                 class=" object-cover w-28">
-            <div class="pl-[200px] px-8">
+            <div class="pl-[200px] px-8 max-sm:hidden">
                 <div
                     class="flex items-center justify-start w-[340px] rounded-full shadow-sm hover:shadow-md h-12 border">
                     <button class="border-r-2 border-gray-100 px-4 text-sm font-medium">Anywhere</button>
@@ -50,7 +50,7 @@
         </div>
 
         <!-- Catagory -->
-        <div class="flex items-center shadow-sm  h-24 w-screen space-x-5 fixed top-[80px] bg-white z-40">
+        <div class="flex items-center shadow-sm  h-24 w-screen space-x-5 fixed top-[80px] bg-white z-40 max-md:hidden">
             <div class="flex items-center space-x-3">
                 <div class="flex flex-col items-center text-gray-400 hover:text-black gap-2 pl-8">
                     <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt=""
@@ -114,11 +114,11 @@
                 </div>
             </div>
             <span class="material-symbols-outlined pl-4">arrow_circle_right</span>
-            <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border">
+            <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-24 border max-lg:hidden">
                 <span class="material-symbols-outlined">sync_alt</span>
                 <p class="text-xs font-normal">Filters</p>
             </div>
-            <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-[220px] border">
+            <div class="flex justify-around items-center rounded-xl shadow-md h-12 w-[220px] border max-xl:hidden">
                 <p class="text-xs font-normal">Display total before taxes</p>
                 <span class="material-symbols-outlined">
                     toggle_off
@@ -916,9 +916,9 @@
 
     <!-- footer -->
     <footer>
-        <div class="px-10 border-t-[1px] w-screen bg-gray-100 py-10">
+        <div class="px-10 border-t-[1px] w-screen bg-gray-100 py-10 ">
             <h1 class="text-xl font-bold pb-5">Inspiration for future getaways</h1>
-            <div class="flex space-x-5 border-b-[1px]">
+            <div class="flex-wrap space-x-5 border-b-[1px] pb-8 ">
                 <a href="#" class="text-sm font-bold text-gray-700 pb-3">Popular</a>
                 <a href="#" class="text-sm font-bold text-gray-400">Arts & culture</a>
                 <a href="#" class="text-sm font-bold text-gray-400">Outdoors</a>
@@ -930,91 +930,89 @@
                 <a href="#" class="text-sm font-bold text-gray-400">Travel tips & inspiration</a>
                 <a href="#" class="text-sm font-bold text-gray-400">Airbnb-friendly apartments</a>
             </div>
-            <div class="grid grid-cols-6 pt-6">
-                <div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Canmore</p>
-                        <p class="text-sm text-gray-500">Apartment rentals</p>
+            <div class="flex gap-12 mt-8 max-md:flex-col">
+                <div class="flex gap-12">
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Canmore</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Tucson</p>
+                            <p class="text-sm text-gray-500">Condo rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Anaheim</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
                     </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Tucson</p>
-                        <p class="text-sm text-gray-500">Condo rentals</p>
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Benalmádena</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Jasper</p>
+                            <p class="text-sm text-gray-500">Cabin rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Monterey</p>
+                            <p class="text-sm text-gray-500">Bungalow rentals</p>
+                        </div>
                     </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Anaheim</p>
-                        <p class="text-sm text-gray-500">Apartment rentals</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Benalmádena</p>
-                        <p class="text-sm text-gray-500">Apartment rentals</p>
-                    </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Jasper</p>
-                        <p class="text-sm text-gray-500">Cabin rentals</p>
-                    </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Monterey</p>
-                        <p class="text-sm text-gray-500">Bungalow rentals</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Marbella</p>
-                        <p class="text-sm text-gray-500">Beachfront rentals</p>
-                    </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Mountain View</p>
-                        <p class="text-sm text-gray-500">Vacation rentals</p>
-                    </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Paso Robles</p>
-                        <p class="text-sm text-gray-500">Vacation rentals</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Mijas</p>
-                        <p class="text-sm text-gray-500">Apartment rentals</p>
-                    </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Devonport</p>
-                        <p class="text-sm text-gray-500">Vacation rentals</p>
-                    </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Santa Barbara</p>
-                        <p class="text-sm text-gray-500">House rentals</p>
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Marbella</p>
+                            <p class="text-sm text-gray-500">Beachfront rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Mountain View</p>
+                            <p class="text-sm text-gray-500">Vacation rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Paso Robles</p>
+                            <p class="text-sm text-gray-500">Vacation rentals</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Prescott</p>
-                        <p class="text-sm text-gray-500">Apartment rentals</p>
+                <div class="flex gap-12">
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Mijas</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Devonport</p>
+                            <p class="text-sm text-gray-500">Vacation rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Santa Barbara</p>
+                            <p class="text-sm text-gray-500">House rentals</p>
+                        </div>
                     </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Mallacoota</p>
-                        <p class="text-sm text-gray-500">Condo rentals</p>
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Prescott</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Mallacoota</p>
+                            <p class="text-sm text-gray-500">Condo rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Sonoma</p>
+                            <p class="text-sm text-gray-500">House rentals</p>
+                        </div>
                     </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Sonoma</p>
-                        <p class="text-sm text-gray-500">House rentals</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Scottsdale</p>
-                        <p class="text-sm text-gray-500">Apartment rentals</p>
-                    </div>
-                    <div class="hover:cursor-pointer pb-4">
-                        <p class="text-sm font-medium">Tucson</p>
-                        <p class="text-sm text-gray-500">Condo rentals</p>
-                    </div>
-                    <div class="hover:cursor-pointer pb-4 flex">
-                        <p class="text-sm font-medium">Show more</p>
-                        <span class="material-symbols-outlined">
-                            keyboard_arrow_down
-                        </span>
+                    <div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Scottsdale</p>
+                            <p class="text-sm text-gray-500">Apartment rentals</p>
+                        </div>
+                        <div class="hover:cursor-pointer pb-4">
+                            <p class="text-sm font-medium">Tucson</p>
+                            <p class="text-sm text-gray-500">Condo rentals</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1057,7 +1055,7 @@
             </div>
         </div>
         <div class="h-12 bottom-0 border-t-[1px] w-screen bg-gray-100 flex justify-between items-center px-10">
-            <div class="flex space-x-2 text-sm font-base">
+            <div class="flex flex-wrap space-x-2 text-sm font-base max-sm:hidden">
                 <p>© 2023 Airbnb, Inc.</p>
                 <p>·</p>
                 <a href="#" class="hover:underline hover:decoration-solid">Terms</a>
@@ -1098,5 +1096,4 @@
         </div>
     </footer>
 </body>
-
 </html>
