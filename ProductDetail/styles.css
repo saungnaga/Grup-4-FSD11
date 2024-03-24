@@ -438,7 +438,7 @@ input {
     padding: 10px;
 }
 
-.reservasi > button {
+.reservasi > a > button {
     width: 100%;
     padding:  15px ;
     background-color: #DD0F62;
