@@ -1,219 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pemesanan</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #fff; 
-            margin: 0; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; 
-        }
-        .main-container {
-            max-width: 400px; 
-            width: 100%; 
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .divider {
-            border-bottom: 1px solid #ccc;
-            margin: 20px 0;
-        }
-        .button, .button-outline {
-            background-color: #FF385C;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            display: inline-block;
-            margin-right: 10px;
-        }
-        .button-outline {
-            background-color: transparent;
-            color: #FF385C;
-            border: 1px solid #FF385C;
-        }
-        .social-logins {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .social-login {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-        }
-        .icon-placeholder {
-            width: 24px;
-            height: 24px;
-            background-color: #ccc;
-            display: inline-block;
-        }
-        .payment-option {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            border: 2px solid #ccc;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .payment-option input[type="radio"] {
-            margin-right: 10px;
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="lg:ml-4 hidden md:block">
+      <a href="#">
+        <img src="air_bnb.png" alt="Icon" class="w-32" />
+      </a>
+    </nav>
+    <main class="grid grid-cols-1 md:grid-cols-2 md:gap-10 lg:gap-24 my-14 mx-10 md:mx-1 lg:mx-28">
+      <section>
+        <span class="flex items-center relative">
+          <ion-icon
+            name="chevron-back-outline"
+            class="absolute left-[-2rem]"
+          ></ion-icon>
+          <h1 class="text-3xl font-semibold">Request to book</h1>
+        </span>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pemesanan</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                padding: 20px;
-                background-color: #fff; 
-                margin: 0; 
-                display: flex;
-                justify-content: center;
-                align-items: flex-start; 
-                min-height: 100vh; 
-                flex-wrap: wrap; 
-            }
-            .main-container, .sidebar {
-                max-width: 400px; 
-                width: 100%; 
-                margin: 0 10px; 
-            }
-            .section {
-                margin-bottom: 20px;
-            }
-            .divider {
-                border-bottom: 1px solid #ccc;
-                margin: 20px 0;
-            }
-            .button, .button-outline {
-                background-color: #FF385C;
-                color: white;
-                padding: 10px 15px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                display: inline-block;
-                margin-right: 10px;
-            }
-            .button-outline {
-                background-color: transparent;
-                color: #FF385C;
-                border: 1px solid #FF385C;
-            }
-            .sidebar {
-                
-                padding: 20px;
-                border: 1px solid #ccc; 
-                border-radius: 5px; 
-            }
-        </style>
-    </head>
-    <body>
-
-<div class="main-container">
-    <h2>Ajukan Pemesanan</h2>
-
-    <div class="section">
-        <h3>Perjalanan Anda</h3>
-        <p>Tanggal: 15–24 Mei <button class="button-outline">Edit</button></p>
-        <p>Tamu: 1 tamu <button class="button-outline">Edit</button></p>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="section">
-        <h3>Pilih cara membayar</h3>
-        <div class="payment-option">
-            <input type="radio" id="fullPayment" name="payment" value="full" checked>
-            <label for="fullPayment">Bayar secara penuh: Bayar biaya total (Rp25.059.155,00).</label>
+        <div
+          class="flex gap-16 border border-zinc-300 py-3 px-5 rounded-lg mt-12"
+        >
+          <span>
+            <h1 class="text-base font-semibold">Good price.</h1>
+            <p class="text-base font-normal">
+              Your dates are Rp479,262 less than the avg. nightly rate over the
+              last 3 months.
+            </p>
+          </span>
+          <span class="text-4xl text-[#e31c5f] -rotate-90">
+            <ion-icon name="pricetags-outline"></ion-icon>
+          </span>
         </div>
-        <div class="payment-option">
-            <input type="radio" id="partialPayment" name="payment" value="partial">
-            <label for="partialPayment">Bayar sebagian sekarang, sebagian lagi nanti: Rp12.529.578,00 harus dibayarkan hari ini, Rp12.529.577,00 pada tanggal 2 Mei 2024. Tanpa biaya tambahan.</label>
+
+        <div class="flex flex-col gap-y-5 py-5 border-b border-zinc-300">
+          <h1 class="text-xl font-semibold">Your trip</h1>
+          <div class="flex justify-between">
+            <span>
+              <p class="text-base font-semibold">Dates</p>
+              <p class="text-base font-normal">May 15-24</p>
+            </span>
+            <a href="#" class="text-base font-semibold underline">Edit</a>
+          </div>
+          <div class="flex justify-between">
+            <span>
+              <p class="text-base font-semibold">Guests</p>
+              <p class="text-base font-normal">1 guest</p>
+            </span>
+            <a href="#" class="text-base font-semibold underline">Edit</a>
+          </div>
         </div>
-    </div>
 
-
-
-    <p>Masuk ke akun atau daftar untuk memesan</p>
-
-    <div class="divider"></div>
-
-    <div class="main-container">
-        <div class="input-group">
-            <label for="country">Negara/Wilayah: Indonesia (+62)</label>
-            <input type="text" id="country" name="country" value="Indonesia (+62)" readonly>
+        <div class="py-5 border-b border-zinc-300">
+          <h1 class="text-xl font-semibold">Choose how to pay</h1>
+          <div
+            class="flex justify-between mt-5 p-3 border-2 border-black rounded-t-lg"
+          >
+            <span>
+              <h1 class="text-base font-semibold">Pay in full</h1>
+              <p class="text-base font-normal">
+                Pay the total (Rp24,946,610.00).
+              </p>
+            </span>
+            <span class="text-3xl cursor-pointer">
+              <ion-icon name="radio-button-on-outline"></ion-icon>
+            </span>
+          </div>
+          <div
+            class="flex justify-between p-3 border border-zinc-300 rounded-b-lg"
+          >
+            <span>
+              <h1 class="text-base font-semibold">Pay part now, part later</h1>
+              <p class="text-base font-normal">
+                Rp12,473,305.00 due today, Rp12,473,305.00 on May 2, 2024. No
+                extra fees.
+                <a href="#" class="text-base font-semibold underline"
+                  >More info</a
+                >
+              </p>
+            </span>
+            <span class="text-3xl cursor-pointer">
+              <ion-icon name="radio-button-off-outline"></ion-icon>
+            </span>
+          </div>
         </div>
-        <div class="input-group">
-            <label for="phone">Nomor telepon</label>
-            <input type="text" id="phone" name="phone" placeholder="+62">
-        </div>
-        <p class="small-text">Kami akan menelepon atau mengirim SMS guna mengonfirmasikan nomor Anda. Tarif standar SMS dan data berlaku. <a href="#">Kebijakan Privasi</a></p>
-        <button class="button">Lanjutkan</button>
-    </div>
-    
-        
-        <div class="divider">Atau</div>
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Social Icons Example</title>
-        <style>
-            .social-login {
-                width: 38px; 
-                height: 38px; 
-                border-radius: 50%3; 
-                overflow: hidden; 
-                display: inline-block; 
-                margin-right: 10px; 
-            }
-            .social-login img {
-                width: 100%; 
-                display: block; 
-            }
-        </style>
-    </head>
-    <body>
-    
-    <div class="social-logins">
-        <div class="social-login">
-            <img src="https://icons.iconarchive.com/icons/sicons/basic-round-social/48/facebook-icon.png" alt="Facebook">
-        </div>
-        <div class="social-login">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
-        </div>
-        <div class="social-login">
-            <img src="https://icons.iconarchive.com/icons/martz90/circle/48/apple-2-icon.png" alt="Apple">
-        </div>
-    </div>
-    
-    </body>
-    </html>
-    
+        <div>
+          <h1 class="text-xl font-semibold my-5">Log in or sign up to book</h1>
+          <button
+            type="button"
+            class="relative w-full cursor-default rounded-t-lg bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:rounded-lg focus:ring-2 focus:ring-black sm:text-sm sm:leading-6"
+          >
+            <span class="flex flex-col">
+              <span class="opacity-60">Country code</span>
+              <p class="text-base font-normal">Indonesia(+62)</p>
+            </span>
+            <span
+              class="absolute inset-y-0 right-0 flex items-center pr-3 text-xl"
+            >
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </span>
+          </button>
+          <input
+            type="number"
+            class="relative w-full cursor-default rounded-b-lg bg-white py-4 px-3 text-left placeholder:text-base text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:rounded-lg focus:ring-2 focus:ring-black sm:text-sm sm:leading-6"
+            placeholder="Phone number"
+          />
+          <p class="text-xs my-2">
+            We’ll call or text you to confirm your number. Standard message and
+            data rates apply.
+            <a href="#" class="font-semibold underline">Privacy Policy</a>
+          </p>
 
-    <button class="button">Lanjutkan dengan email</button>
-</div>
+          <button
+            class="bg-gradient-to-r from-[#e61e50] via-[#e31b5e] to-[#d80566] w-full mt-2 rounded-lg py-3 text-white text-base font-semibold"
+          >
+            Continue
+          </button>
+          <div class="flex items-center gap-2 my-4">
+            <div class="border-b w-[50%] h-1 border-zinc-300"></div>
+            <p class="text-xs">or</p>
+            <div class="border-b w-[50%] h-1 border-zinc-300"></div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-5">
+            <div
+              class="border border-black rounded-lg py-3 flex justify-center text-2xl"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div
+              class="border border-black rounded-lg py-3 flex justify-center text-2xl"
+            >
+              <ion-icon name="logo-google"></ion-icon>
+            </div>
+            <div
+              class="border border-black rounded-lg py-3 flex justify-center text-2xl"
+            >
+              <ion-icon name="logo-apple"></ion-icon>
+            </div>
+          </div>
+
+          <div
+            class="relative border border-black rounded-lg py-3 flex justify-center text-sm mt-4"
+          >
+            <span class="absolute left-5 text-xl">
+              <ion-icon name="mail-outline"></ion-icon>
+            </span>
+            Continue with email
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-20">
+        <div id="elementFix" class="border border-zinc-300 rounded-lg p-6">
+          <div class="flex gap-4 items-center border-b border-zinc-300 pb-6">
+            <img
+              src="7.jpg"
+              alt="image"
+              class="w-28 h-28 rounded-xl object-cover"
+            />
+            <span class="overflow-hidden">
+              <h1 class="text-base font-semibold">
+                SarNest - Designed with Nature
+              </h1>
+              <p class="text-base font-normal">Entire home</p>
+              <span class="flex gap-1 items-center text-sm font-normal">
+                <ion-icon name="star"></ion-icon>
+                <span class="text-sm font-semibold">4.89</span> (35 reviews) •
+                <ion-icon name="bulb"></ion-icon>
+                Superhost
+              </span>
+            </span>
+          </div>
+
+          <div class="border-b border-zinc-300 rounded-lg py-6">
+            <h1 class="text-xl font-semibold">Price details</h1>
+            <span class="flex justify-between mt-4 flex-wrap">
+              <p class="text-base font-normal">Rp2,571,716.00 x 9 nights</p>
+              <p class="text-base font-normal">Rp23,145,444.00</p>
+            </span>
+            <span class="flex justify-between flex-wrap mt-3">
+              <p class="text-base font-normal">Weekly stay discount</p>
+              <p class="text-base font-normal text-[#1e9722]">
+                -Rp2,314,548.00
+              </p>
+            </span>
+            <span class="flex justify-between flex-wrap mt-3">
+              <a href="#" class="text-base font-normal underline"
+                >Cleaning fee</a
+              >
+              <p class="text-base font-normal">Rp736,038.00s</p>
+            </span>
+            <span class="flex justify-between flex-wrap mt-3">
+              <a href="#" class="text-base font-normal underline"
+                >Airbnb service fee</a
+              >
+              <p class="text-base font-normal">Rp3,379,676.00</p>
+            </span>
+          </div>
+
+          <div class="flex justify-between mt-6 text-base font-semibold">
+            <h1>Total(IDR)</h1>
+            <h1>Rp24,946,610.00</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-zinc-300 py-5 px-20 md:flex justify-between">
+      <span class="text-sm font-normal flex gap-2"
+        >&copy; 2024 Airbnb,Inc. ·
+        <a href="#" class="hover:underline">Terms</a> ·
+        <a href="#" class="hover:underline">Sitemap</a> ·
+        <a href="#" class="hover:underline">Privacy</a> ·
+        <a href="#" class="hover:underline">Your Privacy Choices</a></span>
+
+        <div class="flex gap-5">
+        <span class="flex items-center gap-2 text-sm font-semibold">
+          <ion-icon name="globe-outline"></ion-icon>
+          <h1>English(US)</h1>
+        </span>
+        <span class="text-sm font-semibold">
+          <h1>RP IDR</h1>
+        </span>
+        <span class="flex items-center gap-3 text-sm font-semibold">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+        </span>
+        </div>
+
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", () => {
+        const element = document.getElementById("elementFix");
+        const scrollTop = window.pageYOffset;
+
+        if (scrollTop > 100) {
+          element.style.position = "sticky";
+          element.style.top = "50px";
+        } else {
+          element.style.position = "relative";
+          element.style.top = "0";
+        }
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
