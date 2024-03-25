@@ -763,7 +763,7 @@ a {color: black;}
         z-index: 50
     }
     
-    .footer-button > button {
+    .footer-button > a > button {
         padding: 20px;
         background-color: #DD0F62;
         color: white;
